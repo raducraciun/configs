@@ -1,0 +1,10 @@
+1) User meegal was not able to use sudo command
+Corrected by :
+	- escalating to super user
+	$ su
+	- adding user to sudoers group
+	$ sudo adduser meegal sudo
+
+2) Desktop folder was displayed by default by LXQt although unused.
+Disabled it by :
+	- editing ~/.config/user-dirs.dirs and chaning XDG_DESKTOP_DIR value to $HOME (instead of $HOME/Desktop)
